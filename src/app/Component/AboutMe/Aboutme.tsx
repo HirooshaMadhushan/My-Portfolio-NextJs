@@ -7,7 +7,7 @@ function MyComponent() {
     <div className='bg-slate-900 '>
         <div className="container flex justify-between gap-28 bg-Slate-700">
             <div className="p-10">
-                <Image src="/my1.png" alt="Description of image" width={400} height={400} className=' rounded-full border-blue-300' />
+                <Image src="/my1.png" alt="Description of image" width={700} height={500} className='p-none' />
             </div>
             <div className=' container py-24 justify-end'>
                 <div className='flex gap-5 '>
