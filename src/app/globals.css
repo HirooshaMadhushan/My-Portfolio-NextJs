@@ -31,3 +31,31 @@ body {
     text-wrap: balance;
   }
 }
+
+.portfolio {
+  position: relative; /* Needed to position the ::after pseudo-element */
+  display: inline-block; /* Allows the underline to fit the text width */
+  transition: color 0.7s; /* Smooth color transition over 1 second */
+}
+
+.portfolio::after {
+  content: ''; /* Creates a pseudo-element */
+  position: absolute; /* Allows the pseudo-element to be positioned relative to the parent */
+  left: 0;
+  bottom: 0; /* Positions the underline at the bottom of the text */
+  width: 100%; /* Initially sets the width of the underline to 100% of the text */
+  height: 2px; /* Sets the thickness of the underline */
+  background-color: aqua; /* Color of the underline */
+  transition: transform 1s; /* Smooth underline transition over 1 second */
+  transform: scaleX(0); /* Starts the underline from 0 width */
+  transform-origin: left; /* Defines the starting point of the underline animation */
+}
+
+.portfolio:hover {
+  color: aqua; /* Changes text color to aqua on hover */
+}
+
+.portfolio:hover::after {
+  transform: scaleX(1); /* Expands the underline to full width on hover */
+}
+
