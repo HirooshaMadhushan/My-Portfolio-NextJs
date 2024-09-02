@@ -32,6 +32,11 @@ body {
   }
 }
 
+/* Add this to your global CSS or component-specific CSS */
+.transition-transform {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .portfolio {
   position: relative; /* Needed to position the ::after pseudo-element */
   display: inline-block; /* Allows the underline to fit the text width */

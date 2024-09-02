@@ -9,10 +9,10 @@ export default function Home() {
 
   return (
     <main className="  p-12">
-     <Navigation/>
-     <Aboutme/>
-     <Mainskill/>
-     <Contactme/>
+     <section id="Navigation"><Navigation/></section>
+     <section id="Aboutme"><Aboutme/></section>
+     <section id="Mainskill"><Mainskill/></section>
+     <section id="Contactme"><Contactme/></section>
 
 
      
